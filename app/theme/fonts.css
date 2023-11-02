@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Handelson Two";
+    src: local('Handelson Two'), url(/fonts/handelson-two.otf) format('otf');
+}
+  
+@font-face {
+    font-family: "Beckman Heavy";
+    src: local('Beckman Heavy'), url(/fonts/beckman-heavy.otf) format('otf');
+}
+  
+@font-face {
+    font-family: "Poppins";
+    src: local('Poppins'), url(/fonts/poppins-regular.otf) format('ttf');
+}
