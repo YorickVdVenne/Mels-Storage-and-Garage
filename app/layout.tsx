@@ -3,7 +3,7 @@ import './globals.css'
 import Navigation from '@/components/organisms/Navigation/Component'
 import Footer from '@/components/organisms/Footer/Component'
 import '../fontawesome';
-import DefaultMetatags from '@/components/molecules/Component';
+import DefaultMetatags from '@/components/molecules/DefaultMetatags/Component';
 
 export const metadata: Metadata = {
   title: 'Create Next App',

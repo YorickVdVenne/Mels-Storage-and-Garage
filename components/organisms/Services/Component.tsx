@@ -1,6 +1,11 @@
+'use client'
+
 import React from 'react'
-import Card from '@/components/atoms/Card/Component';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ServiceCard from '@/components/molecules/ServiceCard/Component';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+
+library.add(fas)
 
 export default function Services (): JSX.Element {
     
@@ -13,49 +18,13 @@ export default function Services (): JSX.Element {
                 <div className='w-full flex justify-center mt-8'>
                     <div className='grid grid-cols-10 gap-4'>
                         <div className='col-start-2 col-end-4'>
-                            <Card>
-                                <div className='bg-red bg-opacity-10 p-5 rounded-lg'>
-                                    <FontAwesomeIcon className='text-red' width={60} height={60} icon={['fas', 'warehouse']} />
-                                </div>
-                            </Card>
-                            <div>
-                                <button className='flex flex-row justify-between w-full items-center'>
-                                    <span className='text-white text-xl'>Storage</span>
-                                    <span className='bg-red p-5 rounded-br-lg'>
-                                        <FontAwesomeIcon className='text-white' width={20} height={20} icon={['fas', 'chevron-right']} />
-                                    </span>
-                                </button>
-                            </div>
+                            <ServiceCard onClick={() => console.log('test')} buttonText='Storage' icon='warehouse'/>
                         </div>
                         <div className='col-start-5 col-end-7'>
-                        <Card>
-                            <div className='bg-red bg-opacity-10 p-5 rounded-lg'>
-                                <FontAwesomeIcon className='text-red' width={60} height={60} icon={['fas', 'screwdriver-wrench']} />
-                            </div>
-                        </Card>
-                            <div>
-                                <button className='flex flex-row justify-between w-full items-center'>
-                                    <span className='text-white text-xl'>Maintenance</span>
-                                    <span className='bg-red p-5 rounded-br-lg'>
-                                        <FontAwesomeIcon className='text-white' width={20} height={20} icon={['fas', 'chevron-right']} />
-                                    </span>
-                                </button>
-                            </div>
+                            <ServiceCard onClick={() => console.log('test')} buttonText='Maintenance' icon='screwdriver-wrench'/>
                         </div>
                         <div className='col-start-8 col-end-10'>
-                        <Card>
-                            <div className='bg-red bg-opacity-10 p-5 rounded-lg'>
-                                <FontAwesomeIcon className='text-red' width={60} height={60} icon={['fas', 'gear']} />
-                            </div>
-                        </Card>
-                            <div>
-                                <button className='flex flex-row justify-between w-full items-center'>
-                                    <span className='text-white text-xl'>Others</span>
-                                    <span className='bg-red p-5 rounded-br-lg'>
-                                        <FontAwesomeIcon className='text-white' width={20} height={20} icon={['fas', 'chevron-right']} />
-                                    </span>
-                                </button>
-                            </div>
+                            <ServiceCard onClick={() => console.log('test')} buttonText='Others' icon='gear'/>
                         </div>
                     </div>
                 </div>
