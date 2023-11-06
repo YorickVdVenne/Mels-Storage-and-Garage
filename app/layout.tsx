@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Navigation from '@/components/organisms/Navigation/Component'
 import Footer from '@/components/organisms/Footer/Component'
+import '../fontawesome';
+import DefaultMetatags from '@/components/molecules/Component';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -14,8 +16,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className='font-poppins'>
+    <html lang="en" className='static h-auto overflow-y-auto'>
+      <DefaultMetatags />
+      <body className='font-commons'>
         <Navigation />
         {children}
         <Footer />

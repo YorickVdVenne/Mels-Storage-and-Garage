@@ -16,8 +16,19 @@ const config: Config = {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
         handelson: ['Handelson Two'],
-        beckman: ['Beckman Heavy']
-      }
+        heavy: ['Beckman Heavy'],
+        beckman: ['Beckman'],
+        cheddar: ['CheddarGothicRough Regular'],
+        commons: ['TT Commons']
+      },
+      colors: {
+        'navy': '#171824',
+        'light-navy': '#1D1F30',
+        'lightest-navy': '#233554',
+        'red': '#D93837',
+        'light-red': '#302130',
+        'custom-grey': '#8892b0'
+      },
     },
   },
   plugins: [],

@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   
 }
@@ -19,4 +18,22 @@
 
 body {
 
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.lightest-navy');
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: theme('colors.custom-grey');
+  border: 3px solid theme('colors.navy');
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: theme('colors.navy');
 }
