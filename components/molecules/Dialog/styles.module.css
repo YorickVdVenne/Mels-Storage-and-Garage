@@ -1,0 +1,59 @@
+.overlay[data-state="open"] {
+  animation: fadeIn 300ms ease-out forwards;
+}
+
+.overlay[data-state="closed"] {
+  animation: fadeOut 300ms ease-in forwards;
+}
+
+.content[data-state="open"] {
+  animation: slideIn 300ms ease-out forwards;
+}
+
+.content[data-state="closed"] {
+  animation: slideOut 300ms ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.7;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0.7;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translate(-50%, 100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate(-50%, 100%);
+    opacity: 0;
+  }
+}

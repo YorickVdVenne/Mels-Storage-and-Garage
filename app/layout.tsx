@@ -16,9 +16,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='static h-auto overflow-y-auto'>
+    <html lang="en" className='static h-auto'>
       <DefaultMetatags />
-      <body className='font-commons'>
+      <body className='font-commons mr-0 bg-navy text-white'>
         <Navigation />
         {children}
         <Footer />
