@@ -6,7 +6,7 @@ import React from 'react'
 export default function Contact (): JSX.Element {
     
     return (
-        <div className='grid grid-cols-10 gap-4'>
+        <div id='contact' className='grid grid-cols-10 gap-4'>
             <div className='col-start-2 col-end-10 pt-10 pb-20 flex justify-center'>
                 <div className='text-white text-center max-w-2xl'>
                     <h2 className='text-red font-beckman'>Contact</h2>

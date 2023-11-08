@@ -4,7 +4,7 @@ import React from 'react'
 export default function About (): JSX.Element {
     
     return (
-        <div className='grid grid-cols-10 gap-4'>
+        <div id='about' className='grid grid-cols-10 gap-4'>
             <div className='col-start-2 col-end-10 pt-20 pb-20'>
                 <h2 className="relative w-fit text-white text-3xl after:block after:w-16 after:h-1 after:bg-red after:content-'' after:absolute -after:bottom-1 after:left-1/10 after:rounded-sm">
                     About Me

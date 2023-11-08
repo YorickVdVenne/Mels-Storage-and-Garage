@@ -33,7 +33,7 @@ export default function Services (): JSX.Element {
     const [openDialog, setOpenDialog] = useState<ServiceData | boolean>(false)
     
     return (
-        <div className='grid grid-cols-10 gap-4'>
+        <div id='services' className='grid grid-cols-10 gap-4'>
             <div className='col-start-2 col-end-10 pt-10 pb-10'>
                 <h2 className="relative w-fit text-white text-3xl after:block after:w-16 after:h-1 after:bg-red after:content-'' after:absolute -after:bottom-1 after:left-1/10 after:rounded-sm">
                     Services
