@@ -1,11 +1,10 @@
-@import url("./theme/fonts.css");
+@import url('./theme/fonts.css');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,7 +16,6 @@
 }
 
 html {
-
 }
 
 body {
@@ -25,7 +23,6 @@ body {
     overflow: hidden;
     transform: translateX(-2px);
   }
-
 }
 
 ::-webkit-scrollbar {

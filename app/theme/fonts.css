@@ -1,30 +1,41 @@
 @font-face {
-    font-family: "Handelson Two";
-    src: local('Handelson Two'), url(/fonts/handelson-two.otf) format('otf');
-}
-  
-@font-face {
-    font-family: "Beckman Heavy";
-    src: local('Beckman Heavy'), url(/fonts/beckman-heavy.otf) format('otf');
+  font-family: 'Handelson Two';
+  src:
+    local('Handelson Two'),
+    url(/fonts/handelson-two.otf) format('otf');
 }
 
 @font-face {
-    font-family: "Beckman";
-    src: local('Beckman'), url(/fonts/beckman.otf) format('otf');
-}
-  
-@font-face {
-    font-family: "Poppins";
-    src: local('Poppins'), url(/fonts/poppins-regular.ttf) format('ttf');
+  font-family: 'Beckman Heavy';
+  src:
+    local('Beckman Heavy'),
+    url(/fonts/beckman-heavy.otf) format('otf');
 }
 
 @font-face {
-    font-family: "CheddarGothicRough Regular";
-    src: local('CheddarGothicRough Regular'), url(/fonts/CheddarGothicRough-Regular.woff2) format('woff2');
+  font-family: 'Beckman';
+  src:
+    local('Beckman'),
+    url(/fonts/beckman.otf) format('otf');
 }
 
 @font-face {
-    font-family: "TT Commons";
-    src: local('TT Commons'), url(/fonts/TT-Commons-Regular.otf) format('otf');
+  font-family: 'Poppins';
+  src:
+    local('Poppins'),
+    url(/fonts/poppins-regular.ttf) format('ttf');
 }
 
+@font-face {
+  font-family: 'CheddarGothicRough Regular';
+  src:
+    local('CheddarGothicRough Regular'),
+    url(/fonts/CheddarGothicRough-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'TT Commons';
+  src:
+    local('TT Commons'),
+    url(/fonts/TT-Commons-Regular.otf) format('otf');
+}
