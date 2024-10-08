@@ -1,10 +1,10 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -14,23 +14,27 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
+        'grotesk-grand': ['Cy Grotesk Grand'],
+        grotesk: ['Cy Grotesk'],
         poppins: ['Poppins', 'sans-serif'],
-        handelson: ['Handelson Two'],
-        heavy: ['Beckman Heavy'],
         beckman: ['Beckman'],
-        cheddar: ['CheddarGothicRough Regular'],
-        commons: ['TT Commons']
+        'beckman-heavy': ['Beckman Heavy'],
+        commons: ['TT Commons'],
+        roboto: ['Roboto'],
       },
       colors: {
-        'navy': '#171824',
-        'light-navy': '#1D1F30',
-        'lightest-navy': '#233554',
-        'red': '#D93837',
-        'light-red': '#302130',
-        'custom-grey': '#8892b0'
+        primary: '#082866',
+        secondary: '#00adef',
+        'light-primary': '#1D1F30',
+        'lightest-primary': '#233554',
+        'light-secondary': '#302130',
+        'custom-grey': '#8892b0',
+      },
+      transitionProperty: {
+        width: 'width',
       },
     },
   },
   plugins: [],
-}
-export default config
+};
+export default config;

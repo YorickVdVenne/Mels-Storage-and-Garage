@@ -1,0 +1,110 @@
+{
+    "data": {
+        "title": "Tarieven",
+        "id": "tarieven",
+        "tabs": [
+            {
+                "id": "1-auto",
+                "title": "Auto"
+            },
+            {
+                "id": "2-motor",
+                "title": "Motor"
+            }
+        ],
+        "panels": [
+            {
+                "items": [
+                    {
+                        "id": "rate-1",
+                        "title": "Basic plan - Auto",
+                        "excerpt": "Dit is een beknopte kleine samenvatting van de rate",
+                        "price": "€ 100",
+                        "description": "Description of rate 1",
+                        "features": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3",
+                            "Feature 4",
+                            "Feature 5"
+                        ]
+                    },
+                    {
+                        "id": "rate-2",
+                        "title": "Popular plan - Auto",
+                        "excerpt": "Dit is een beknopte kleine samenvatting van de rate",
+                        "price": "€ 200",
+                        "description": "Description of rate 2",
+                        "features": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3",
+                            "Feature 4",
+                            "Feature 5"
+                        ]
+                    },
+                    {
+                        "id": "rate-3",
+                        "title": "Premium plan - auto",
+                        "excerpt": "Dit is een beknopte kleine samenvatting van de rate",
+                        "price": "€ 300",
+                        "description": "Description of rate 3",
+                        "features": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3",
+                            "Feature 4",
+                            "Feature 5"
+                        ]
+                    }
+                ]
+            },
+            {
+                "items": [
+                    {
+                        "id": "rate-4",
+                        "title": "Basic plan - Motor",
+                        "excerpt": "Dit is een beknopte kleine samenvatting van de rate",
+                        "price": "€ 100",
+                        "description": "Description of rate 1",
+                        "features": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3",
+                            "Feature 4",
+                            "Feature 5"
+                        ]
+                    },
+                    {
+                        "id": "rate-5",
+                        "title": "Popular plan - Motor",
+                        "excerpt": "Dit is een beknopte kleine samenvatting van de rate",
+                        "price": "€ 200",
+                        "description": "Description of rate 2",
+                        "features": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3",
+                            "Feature 4",
+                            "Feature 5"
+                        ]
+                    },
+                    {
+                        "id": "rate-6",
+                        "title": "Premium plan - Motor",
+                        "excerpt": "Dit is een beknopte kleine samenvatting van de rate",
+                        "price": "€ 300",
+                        "description": "Description of rate 3",
+                        "features": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3",
+                            "Feature 4",
+                            "Feature 5"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

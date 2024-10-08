@@ -1,14 +1,13 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode } from 'react';
 
 interface CardProps {
-    children: ReactNode;
-  }
+  children: ReactNode;
+}
 
-export default function Card (props: CardProps): JSX.Element {
-    
-    return (
-        <div className="max-w-md rounded-t-lg overflow-hidden bg-light-navy p-10">
-        {props.children}
-      </div>
-    );
-};
+export default function Card(props: CardProps): JSX.Element {
+  return (
+    <div className="rounded-t-lg overflow-hidden bg-light-primary">
+      {props.children}
+    </div>
+  );
+}
