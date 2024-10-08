@@ -9,7 +9,7 @@ export default function Footer(): JSX.Element {
   const pathname = usePathname();
 
   return (
-    <footer className="bg-navy text-white tracking-widest font-beckman text-sm w-full z-10 grid grid-cols-10 gap-4">
+    <footer className="bg-primary text-white tracking-widest text-sm w-full z-10 grid grid-cols-10 gap-4">
       <div className="flex flex-row items-center justify-between p-6 gap-12 px-0 col-start-2 col-end-10">
         <div className="flex-1 flex justify-start">
           <Link
@@ -22,13 +22,8 @@ export default function Footer(): JSX.Element {
               }
             }}
           >
-            <span className="font-beckman text-2xl leading-10 group flex">
-              <span className="group-hover:text-red transition-colors duration-500">
-                Moto
-              </span>
-              <span className="text-red group-hover:text-white transition-all duration-500 group-hover:translate-x-1">
-                Mel
-              </span>
+            <span className="font-grotesk-grand text-lg md:text-2xl hover:text-secondary transition-all duration-300 ease-in-out">
+              Mel's
             </span>
           </Link>
         </div>
@@ -36,15 +31,15 @@ export default function Footer(): JSX.Element {
           <span className="text-3xl">&#169;</span>
           {currentYear}
         </span>
-        <span className="flex-1 flex justify-end gap-1">
-          Website Built by
+        <span className="flex-1 flex justify-end gap-1 whitespace-nowrap">
+          Built by
           <a
-            className="hover:text-red transition-colors group"
+            className="hover:text-secondary transition-colors group"
             href="https://yorick.vercel.app/"
             target="_blank"
           >
             Yorick
-            <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-px bg-red" />
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-px bg-secondary" />
           </a>
         </span>
       </div>

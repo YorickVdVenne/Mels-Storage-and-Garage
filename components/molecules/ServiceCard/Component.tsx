@@ -15,9 +15,9 @@ export default function ServiceCard(props: ServiceCardProps): JSX.Element {
   return (
     <button onClick={onClick} className="group relative">
       <Card>
-        <div className="bg-red bg-opacity-10 p-5 rounded-lg transform scale-100 group-hover:scale-110 transition-transform">
+        <div className="bg-secondary bg-opacity-10 p-5 rounded-lg transform scale-100 group-hover:scale-110 transition-transform">
           <FontAwesomeIcon
-            className="text-red h-14 w-14"
+            className="text-secondary h-14 w-14"
             width={56}
             height={56}
             icon={['fas', icon]}
@@ -28,9 +28,9 @@ export default function ServiceCard(props: ServiceCardProps): JSX.Element {
         <span className="text-white text-xl group-hover:translate-x-1 transition-transform">
           {buttonText}
         </span>
-        <span className="bg-red p-5  border-2 border-red rounded-br-lg group-hover:bg-transparent transition-all">
+        <span className="bg-secondary p-5  border-2 border-secondary rounded-br-lg group-hover:bg-transparent transition-all">
           <FontAwesomeIcon
-            className="text-white group-hover:text-red transition-all"
+            className="text-white group-hover:text-secondary transition-all"
             width={20}
             height={20}
             icon={['fas', 'chevron-right']}

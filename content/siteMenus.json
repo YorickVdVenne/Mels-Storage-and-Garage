@@ -1,0 +1,33 @@
+{
+    "data": {
+        "mainNavigation": {
+            "links": [
+                {
+                    "id": "rates",
+                    "label": "Tarieven",
+                    "href": "/#tarieven"
+                },
+                {
+                    "id": "reviews",
+                    "label": "Reviews",
+                    "href": "/#reviews"
+                },
+                {
+                    "id": "about-me",
+                    "label": "About me",
+                    "href": "/#about-me"
+                },
+                {
+                    "id": "contact",
+                    "label": "Contact",
+                    "href": "/#contact"
+                }
+            ],
+            "actionButton": {
+                "label": "Bericht mij",
+                "href": "/#contact"
+            }
+        },
+        "footer": {}
+    }
+}

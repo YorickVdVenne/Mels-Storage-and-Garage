@@ -6,7 +6,7 @@ interface CardProps {
 
 export default function Card(props: CardProps): JSX.Element {
   return (
-    <div className="max-w-md rounded-t-lg overflow-hidden bg-light-navy p-10">
+    <div className="rounded-t-lg overflow-hidden bg-light-primary">
       {props.children}
     </div>
   );

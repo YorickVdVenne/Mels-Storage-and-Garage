@@ -7,6 +7,8 @@ import { IconName } from '@fortawesome/fontawesome-svg-core';
 interface ButtonProps {
   children: React.ReactNode;
   icon?: IconName;
+  size?: 'small' | 'medium' | 'large';
+  variant?: 'primary' | 'secondary';
 }
 
 type Props =
@@ -16,13 +18,13 @@ type Props =
       React.ButtonHTMLAttributes<HTMLButtonElement>);
 
 export function Button(props: Props): JSX.Element {
-  const { children, icon, ...componentProps } = props;
+  const { children, icon, size, ...componentProps } = props;
 
   const childComponents = (
     <>
       {hasValue(icon) && (
         <FontAwesomeIcon
-          className="text-red"
+          className="text-white group-hover:text-secondary transition-all w-4 h-4 mr-2"
           width={60}
           height={60}
           icon={['fas', icon]}
@@ -33,16 +35,16 @@ export function Button(props: Props): JSX.Element {
   );
 
   if (componentProps.as === 'link') {
-    const classes = `${componentProps.className}`;
-    const { as, className, ...linkProps } = componentProps;
+    const { className, ...linkProps } = componentProps;
+    const classes = `${className} group bg-secondary ${size === 'small' ? 'py-2 px-4' : size === 'medium' ? 'py-2 px-8' : 'py-2 px-6 sm:py-3 sm:px-10'}  rounded-md border-2 border-secondary hover:bg-transparent hover:text-secondary transition-all`;
     return (
       <InternalOrExternalLink className={classes} {...linkProps}>
         {childComponents}
       </InternalOrExternalLink>
     );
   } else {
-    const classes = `${componentProps.className} bg-red py-3 px-10 rounded-md border-2 border-red hover:bg-transparent hover:text-red transition-all `;
-    const { as, className, ...buttonProps } = componentProps;
+    const { className, ...buttonProps } = componentProps;
+    const classes = `${className} group bg-secondary ${size === 'small' ? 'py-2 px-4' : size === 'medium' ? 'py-2 px-8' : 'py-2 px-6 sm:py-3 sm:px-10'}  rounded-md border-2 border-secondary hover:bg-transparent hover:text-secondary transition-all`;
     return (
       <button className={classes} {...buttonProps}>
         {childComponents}

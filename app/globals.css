@@ -30,15 +30,15 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: theme('colors.lightest-navy');
+  background: theme('colors.lightest-primary');
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: theme('colors.custom-grey');
-  border: 3px solid theme('colors.navy');
+  border: 3px solid theme('colors.primary');
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: theme('colors.navy');
+  background: theme('colors.primary');
 }
