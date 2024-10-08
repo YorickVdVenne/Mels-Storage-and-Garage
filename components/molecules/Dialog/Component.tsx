@@ -1,8 +1,8 @@
-import React, { ReactNode, useCallback, useEffect } from 'react';
-import * as RadixDialog from '@radix-ui/react-dialog';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from '@/components/atoms/Button/Component';
 import { hasValue } from '@/misc/helpers';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import * as RadixDialog from '@radix-ui/react-dialog';
+import { useCallback, useEffect } from 'react';
 import styles from './styles.module.css';
 
 interface DialogProps {
