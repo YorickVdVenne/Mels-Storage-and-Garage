@@ -8,6 +8,10 @@ import { BaseObject } from '@/types/generic';
 import { Panel } from '@/types/rates';
 import React, { useState, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faArrowRight);
 
 interface TabListProps {
   tabs: BaseObject[];
@@ -135,10 +139,7 @@ export default function TabList(props: TabListProps): JSX.Element {
                     {isClient &&
                       item.features.map((feature, index) => (
                         <div key={index} className="flex items-center gap-2">
-                          <FontAwesomeIcon
-                            icon="check"
-                            className="text-secondary mr-2"
-                          />
+                          <FontAwesomeIcon icon={faArrowRight} />
                           {feature}
                         </div>
                       ))}

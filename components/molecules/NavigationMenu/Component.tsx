@@ -55,7 +55,7 @@ export default function NavigationMenu(
     <div className="flex items-center justify-end w-full md:hidden">
       <button
         ref={closeButtonRef}
-        className={`group flex items-center ${props.scrollTop ? 'text-white hover:text-white' : 'hover:text-secondary'} relative z-20 ${menuOpen ? '-translate-x-3' : ''}`}
+        className={`group flex items-center ${props.scrollTop ? 'text-white hover:text-white' : 'hover:text-secondary'} relative z-20`}
         aria-expanded={menuOpen}
         aria-label={!menuOpen ? 'Menu' : 'Close menu'}
         onClick={() => {
