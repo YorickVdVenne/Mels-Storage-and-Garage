@@ -1,0 +1,21 @@
+{
+  "name": "Mels Washing",
+  "short_name": "Mels",
+  "icons": [
+    {
+      "src": "/default/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/default/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#082866",
+  "background_color": "#082866",
+  "display": "standalone"
+}
