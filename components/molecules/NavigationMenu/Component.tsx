@@ -88,6 +88,7 @@ export default function NavigationMenu(
         <NavigationMenuLinks
           siteMenuLinks={props.siteMenuLinks}
           siteMenusActionButton={props.siteMenusActionButton}
+          setMenuOpen={setMenuOpen}
         />
       </aside>
     </div>
