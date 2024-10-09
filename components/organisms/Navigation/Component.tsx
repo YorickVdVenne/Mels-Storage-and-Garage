@@ -39,7 +39,7 @@ export default function Navigation(): JSX.Element {
   return (
     <nav
       aria-label="Main"
-      className={`grid grid-cols-10 gap-4 items-center justify-between fixed top-0 z-10 w-full bg-primary drop-shadow-lg ${scrolled ? '-translate-y-full	' : 'translate-y-0'} ${!scrolled && !scrollTop ? 'h-24' : 'h-28'} ${scrollTop ? 'bg-transparent backdrop-blur-sm drop-shadow-none' : ''} transition-all duration-300 ease-in-out`}
+      className={`grid grid-cols-10 gap-4 items-center justify-between fixed top-0 z-10 w-full bg-primary drop-shadow-lg ${scrolled ? '-translate-y-full	' : 'translate-y-0'} ${!scrolled && !scrollTop ? 'h-20' : 'h-24'} ${scrollTop ? 'bg-transparent backdrop-blur-sm drop-shadow-none' : ''} transition-all duration-300 ease-in-out`}
     >
       <div className="flex justify-between items-center col-start-2 col-end-10 relative w-full">
         <Link
@@ -53,7 +53,7 @@ export default function Navigation(): JSX.Element {
         >
           {}
           <Logo
-            className={`transition-width duration-300 ease-in-out ${!scrolled && !scrollTop ? 'w-20' : 'w-28'}`}
+            className={`transition-width duration-300 ease-in-out ${!scrolled && !scrollTop ? 'w-16 md:20' : 'w-20 md:w-24'}`}
           />
         </Link>
         <NavigationLinks

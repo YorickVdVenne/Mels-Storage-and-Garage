@@ -27,11 +27,11 @@ export default function Footer(): JSX.Element {
             </span>
           </Link>
         </div>
-        <span className="flex items-center flex-1 justify-center gap-1">
+        <span className="flex items-center flex-1 justify-end sm:justify-center gap-1">
           <span className="text-3xl">&#169;</span>
           {currentYear}
         </span>
-        <span className="flex-1 flex justify-end gap-1 whitespace-nowrap">
+        <span className="flex-1 justify-end gap-1 hidden sm:flex">
           Built by
           <a
             className="hover:text-secondary transition-colors group"
