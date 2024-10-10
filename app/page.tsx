@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   description: 'Mels - Washing and Detailing',
   openGraph: {
     title: "Mel's Washing and Detailing",
-    description: "Mel's Washing and Detailing",
+    description:
+      'Cleaning, washing, and detailing services for cars and motorcycles.',
     images: '/default/og-image-logo.png',
   },
 };
