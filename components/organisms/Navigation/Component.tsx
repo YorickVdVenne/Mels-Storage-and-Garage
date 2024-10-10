@@ -19,13 +19,8 @@ export default function Navigation(): JSX.Element {
     const handleScroll = (): void => {
       const currentScrollY = window.scrollY;
 
-      if (currentScrollY !== 0) {
-        setScrollTop(false);
-      } else setScrollTop(true);
-
-      if (window.scrollY > lastScrollY) {
-        setScrolled(true);
-      } else setScrolled(false);
+      setScrollTop(currentScrollY === 0);
+      setScrolled(currentScrollY > lastScrollY && currentScrollY > 0);
 
       lastScrollY = currentScrollY;
     };
