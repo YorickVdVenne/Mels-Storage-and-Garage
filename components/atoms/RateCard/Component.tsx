@@ -1,22 +1,26 @@
 import React, { ReactNode } from 'react';
 import Card from '../Card/Component';
+import { getColorClass } from '@/misc/helpers';
+import { ParentClass } from '@/types/generic';
 
 interface CardRateProps {
   children: ReactNode;
+  color: string;
 }
 
 export default function RateCard(props: CardRateProps): JSX.Element {
-  return <Card>{props.children}</Card>;
+  const colorClass = getColorClass(props.color);
+  return <Card className={`${colorClass} h-full`}>{props.children}</Card>;
 }
 
-export function RateCardHeader(props: CardRateProps): JSX.Element {
-  return (
-    <div className="bg-secondary bg-opacity-10 p-5 rounded-lg transform scale-100 transition-transform">
-      {props.children}
-    </div>
-  );
+export function RateCardHeader(props: ParentClass): JSX.Element {
+  return <div className="flex flex-col gap-5 mb-5">{props.children}</div>;
 }
 
-export function RateCardContent(props: CardRateProps): JSX.Element {
-  return <div className="py-4 px-12 flex flex-col">{props.children}</div>;
+export function RateCardContent(props: ParentClass): JSX.Element {
+  return <div className="flex flex-col gap-3 mb-8">{props.children}</div>;
+}
+
+export function RateCardFooter(props: ParentClass): JSX.Element {
+  return <div className="flex gap-3 mt-auto">{props.children}</div>;
 }
