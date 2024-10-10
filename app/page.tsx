@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mel's Washing and Detailing",
     description: "Mel's Washing and Detailing",
-    images: '/default/android-chrome-192x192.png',
+    images: '/default/og-image-logo.png',
   },
 };
 
