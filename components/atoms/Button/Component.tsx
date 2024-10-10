@@ -44,7 +44,12 @@ export function Button(props: Props): JSX.Element {
     );
   } else {
     const { className, ...buttonProps } = componentProps;
-    const classes = `${className} group bg-secondary ${size === 'small' ? 'py-2 px-4' : size === 'medium' ? 'py-2 px-8' : 'py-2 px-6 sm:py-3 sm:px-10'}  rounded-md border-2 border-secondary hover:bg-transparent hover:text-secondary transition-all`;
+    let classes;
+    if (buttonProps.variant !== 'secondary') {
+      classes = `${className} group bg-secondary ${size === 'small' ? 'py-2 px-4' : size === 'medium' ? 'py-2 px-8' : 'py-2 px-6 sm:py-3 sm:px-10'}  rounded-md border-2 border-secondary hover:bg-transparent hover:text-secondary transition-all`;
+    } else {
+      classes = `${className} group bg-charcoal-black ${size === 'small' ? 'py-2 px-4' : size === 'medium' ? 'py-2 px-8' : 'py-2 px-6 sm:py-3 sm:px-10'}  rounded-md border-2 border-charcoal-black hover:bg-transparent hover:text-charcoal-black transition-all`;
+    }
     return (
       <button className={classes} {...buttonProps}>
         {childComponents}

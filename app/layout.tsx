@@ -14,7 +14,7 @@ export default function RootLayout({
     <html lang="en" className="overflow-x-hidden scroll-smooth">
       <DefaultMetatags />
       <Favicons />
-      <body className="font-roboto m-0 bg-primary text-white overflow-x-hidden relative">
+      <body className="font-roboto m-0 bg-primary text-ivory-white overflow-x-hidden relative">
         <Navigation />
         {children}
         <Footer />

@@ -9,7 +9,7 @@ export default function Header(): JSX.Element {
       <div className="relative col-span-full">
         <Image
           className="absolute h-full w-screen left-1/2 -translate-x-1/2 overflow-hidden object-cover grayscale-[75%] contrast-125 saturate-200 bg-primary opacity-50"
-          src={'/images/car-wash-spray.jpg'}
+          src={'/images/car-wash-scrub.jpg'}
           alt="motor"
           width={1000}
           height={1000}

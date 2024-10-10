@@ -14,4 +14,9 @@ export interface PanelItem {
   price: string;
   description: string;
   features: string[];
+  color: string;
+  cta?: {
+    label: string;
+    href: string;
+  };
 }

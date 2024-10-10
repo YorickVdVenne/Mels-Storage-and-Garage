@@ -8,11 +8,6 @@
                     "href": "/#tarieven"
                 },
                 {
-                    "id": "reviews",
-                    "label": "Reviews",
-                    "href": "/#reviews"
-                },
-                {
                     "id": "about-me",
                     "label": "About me",
                     "href": "/#about-me"

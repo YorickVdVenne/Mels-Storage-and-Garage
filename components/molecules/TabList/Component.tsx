@@ -2,6 +2,7 @@
 
 import RateCard, {
   RateCardContent,
+  RateCardFooter,
   RateCardHeader,
 } from '@/components/atoms/RateCard/Component';
 import { BaseObject } from '@/types/generic';
@@ -9,9 +10,10 @@ import { Panel } from '@/types/rates';
 import React, { useState, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import { Button } from '@/components/atoms/Button/Component';
 
-library.add(faArrowRight);
+library.add(faCheck);
 
 interface TabListProps {
   tabs: BaseObject[];
@@ -87,7 +89,11 @@ export default function TabList(props: TabListProps): JSX.Element {
 
   return (
     <>
-      <div role="tablist" className="relative flex max-w-80" ref={tabListRef}>
+      <div
+        role="tablist"
+        className="relative flex sm:max-w-80"
+        ref={tabListRef}
+      >
         <span
           className="absolute top-0 h-full bg-secondary transition-all duration-300 rounded-md"
           style={{
@@ -127,23 +133,36 @@ export default function TabList(props: TabListProps): JSX.Element {
           >
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {panel.items.map((item, index) => (
-                <RateCard key={index}>
+                <RateCard key={index} color={item.color}>
                   <RateCardHeader>
-                    <h3 className="text-white text-xl text-center">
+                    <h3 className="font-grotesk-grand text-white text-lg">
                       {item.title}
                     </h3>
 
-                    <p className="text-center">{item.price}</p>
+                    <p className="text-4xl font-grotesk">{item.price}</p>
+                    <p>{item.excerpt}</p>
                   </RateCardHeader>
                   <RateCardContent>
                     {isClient &&
                       item.features.map((feature, index) => (
-                        <div key={index} className="flex items-center gap-2">
-                          <FontAwesomeIcon icon={faArrowRight} />
+                        <div key={index} className="flex items-center gap-3">
+                          <span className="bg-charcoal-black rounded-full h-6 w-6 flex justify-center items-center">
+                            <FontAwesomeIcon
+                              icon={faCheck}
+                              className="h-4 w-4 text-white"
+                            />
+                          </span>
                           {feature}
                         </div>
                       ))}
                   </RateCardContent>
+                  {item.cta && (
+                    <RateCardFooter>
+                      <Button as="button" size="medium" variant="secondary">
+                        {item.cta.label}
+                      </Button>
+                    </RateCardFooter>
+                  )}
                 </RateCard>
               ))}
             </div>
