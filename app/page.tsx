@@ -7,12 +7,22 @@ import Rates from '@/components/organisms/Rates/Component';
 
 export const metadata: Metadata = {
   title: 'Mels - Washing and Detailing',
-  description: 'Mels - Washing and Detailing',
+  description:
+    'Cleaning, washing, and detailing services for cars and motorcycles.',
   openGraph: {
-    title: "Mel's Washing and Detailing",
+    title: 'Mels - Washing and Detailing',
     description:
       'Cleaning, washing, and detailing services for cars and motorcycles.',
-    images: '/default/og-image-logo.png',
+    url: 'https://mels-washing.nl',
+    siteName: 'Mels Washing & Detailing',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        alt: 'Mels Washing & Detailing Service',
+      },
+    ],
+    locale: 'nl_NL',
+    type: 'website',
   },
 };
 
