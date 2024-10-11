@@ -26,11 +26,6 @@ export default function Favicons(): JSX.Element {
         href="/default/favicon-48x48.png"
         sizes="48x48"
       />
-      <link
-        rel="mask-icon"
-        href="/default/safari-pinned-tab.svg"
-        color="#5bbad5"
-      />
       <link rel="shortcut icon" href="/default/favicon.ico" />
       <link rel="icon" type="image/svg+xml" href="/default/favicon.svg" />
       <meta name="msapplication-TileColor" content="#082866" />
