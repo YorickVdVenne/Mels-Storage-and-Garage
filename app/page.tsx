@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: 'Mels Washing & Detailing',
     images: [
       {
-        url: '/images/og-image.jpg',
+        url: '/images/og-image.png',
         alt: 'Mels Washing & Detailing Service',
       },
     ],
