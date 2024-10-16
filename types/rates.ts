@@ -10,7 +10,7 @@ export interface Panel {
 export interface PanelItem {
   id: string;
   title: string;
-  category: 'auto' | 'motor';
+  category: string;
   excerpt: string;
   price: string;
   description: string;
