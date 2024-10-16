@@ -40,8 +40,13 @@ export default function NavigationMenuLinks(
           </Link>
         </li>
       ))}
-      <li>
-        <Button as="button" size="small">
+      <li className="mt-3">
+        <Button
+          as="link"
+          href={siteMenusActionButton.href}
+          size="small"
+          target="_blank"
+        >
           {siteMenusActionButton.label}
         </Button>
       </li>

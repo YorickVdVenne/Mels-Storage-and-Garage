@@ -1,0 +1,10 @@
+{
+    "data": {
+        "title": "Over mij",
+        "description": "Hoi, ik ben Melchior Van de Venne, een motorliefhebber met een passie voor schone en glanzende voertuigen. Wat begon als een hobby, is nu uitgegroeid tot een leuke weekendbaan waarin ik auto's en motoren weer als nieuw laat stralen. Doordeweeks ben ik druk met mijn andere werk, maar in het weekend maak ik graag tijd om voertuigen van een grondige was- en poetsbeurt te voorzien. Persoonlijke service, lekker bezig zijn en oog voor detail staan bij mij voorop, ik vind het geweldig om te zien hoe blij mensen kunnen zijn als hun voertuig er weer fris uitziet.",
+        "img": {
+            "src": "/images/profileImage.jpg",
+            "alt": "Profile image of Melchior riding motorcycle"
+        }
+    }
+}

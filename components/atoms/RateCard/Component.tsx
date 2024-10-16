@@ -10,7 +10,9 @@ interface CardRateProps {
 
 export default function RateCard(props: CardRateProps): JSX.Element {
   const colorClass = getColorClass(props.color);
-  return <Card className={`${colorClass} h-full`}>{props.children}</Card>;
+  return (
+    <Card className={`${colorClass} h-full relative`}>{props.children}</Card>
+  );
 }
 
 export function RateCardHeader(props: ParentClass): JSX.Element {

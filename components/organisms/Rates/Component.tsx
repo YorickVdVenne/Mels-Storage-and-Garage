@@ -13,6 +13,7 @@ export default function Rates(): JSX.Element {
       <div className="mt-6">
         <TabList tabs={rates.data.tabs} panels={rates.data.panels} />
       </div>
+      <p className="mt-4 text-sm">{rates.data.note}</p>
     </Section>
   );
 }

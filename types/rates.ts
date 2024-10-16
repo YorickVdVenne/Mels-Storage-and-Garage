@@ -10,6 +10,7 @@ export interface Panel {
 export interface PanelItem {
   id: string;
   title: string;
+  category: string;
   excerpt: string;
   price: string;
   description: string;

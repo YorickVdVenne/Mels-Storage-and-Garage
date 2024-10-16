@@ -1,6 +1,7 @@
 {
     "data": {
         "title": "Tarieven",
+        "note": "Let op: matte oppervlakken graag in overleg. Hier zal een specifieke aangepaste prijs van toepassing zijn. Alle prijzen zijn inclusief BTW.",
         "id": "tarieven",
         "tabs": [
             {
@@ -17,14 +18,16 @@
                 "items": [
                     {
                         "id": "rate-1",
-                        "title": "Basic plan - Auto",
-                        "excerpt": "A cost-effective plan providing essential services for your car.",
-                        "price": "€100,-",
+                        "title": "Basic Plan",
+                        "category": "auto",
+                        "excerpt": "Een kosteneffectief plan met essentiële diensten voor je auto.",
+                        "price": "€50,-",
                         "description": "",
                         "color": "lavender",
                         "features": [
-                            "Exterior wash",
-                            "Interior vacuum",
+                            "Exterieur wash",
+                            "Spray coating (excl. velgen)",
+                            "Interieur Vacuüm",
                             "Window cleaning"
                         ],
                         "cta": {
@@ -34,17 +37,19 @@
                     },
                     {
                         "id": "rate-2",
-                        "title": "Popular plan - Auto",
-                        "excerpt": "Our most popular plan offering a balance of quality and value.",
-                        "price": "€200,-",
+                        "title": "Complete Care Plan",
+                        "category": "auto",
+                        "excerpt": "Voor een complete was- en poetsbeurt van je auto.",
+                        "price": "€80,-",
                         "description": "",
                         "color": "teal",
                         "features": [
-                            "Exterior wash",
-                            "Interior vacuum",
-                            "Window cleaning",
-                            "Rim cleaning",
-                            "Polishing"
+                            "Exterieur wash",
+                            "Spray coating",
+                            "Rim cleaning & protect",
+                            "Interieur vacuüm",
+                            "Interieur cleaning",
+                            "Window cleaning"
                         ],
                         "cta": {
                             "label": "Bericht mij",
@@ -53,20 +58,19 @@
                     },
                     {
                         "id": "rate-3",
-                        "title": "Premium plan - Auto",
-                        "excerpt": "A premium plan for those seeking top-notch services for their car.",
-                        "price": "€300,-",
+                        "title": "Supreme Care Plan",
+                        "category": "auto",
+                        "excerpt": "Een premium plan voor degenen die topdiensten voor hun auto zoeken.",
+                        "price": "€120,-",
                         "description": "",
                         "color": "muted-gold",
                         "features": [
-                            "Exterior wash",
-                            "Interior vacuum",
-                            "Window cleaning",
-                            "Rim cleaning",
-                            "Polishing",
-                            "Waxing",
-                            "Engine cleaning",
-                            "Leather conditioning"
+                            "Exterieur wash",
+                            "Spray coating",
+                            "Rim cleaning & protect",
+                            "Interieur detailing",
+                            "Exterior detailing",
+                            "Polishing (incl. clay treatment)"
                         ],
                         "cta": {
                             "label": "Bericht mij",
@@ -79,14 +83,16 @@
                 "items": [
                     {
                         "id": "rate-4",
-                        "title": "Basic plan - Motor",
-                        "excerpt": "A cost-effective plan providing essential services for your motorcycle.",
-                        "price": "€100,-",
+                        "title": "Basic Plan",
+                        "category": "motor",
+                        "excerpt": "Een kosteneffectief plan met essentiële diensten voor je motor.",
+                        "price": "€40,-",
                         "description": "",
                         "color": "lavender",
                         "features": [
                             "Exterior wash",
-                            "Chain lubrication",
+                            "Spray coating",
+                            "Windshield cleaning",
                             "Seat cleaning"
                         ],
                         "cta": {
@@ -96,17 +102,18 @@
                     },
                     {
                         "id": "rate-5",
-                        "title": "Popular plan - Motor",
-                        "excerpt": "Our most popular plan offering a balance of quality and value for your motorcycle.",
-                        "price": "€200,-",
+                        "title": "Complete Care Plan",
+                        "category": "motor",
+                        "excerpt": "Voor een complete was- en poetsbeurt van je auto.",
+                        "price": "€55,-",
                         "description": "",
                         "color": "teal",
                         "features": [
                             "Exterior wash",
-                            "Chain lubrication",
-                            "Seat cleaning",
-                            "Polishing",
-                            "Rim cleaning"
+                            "Spray coating",
+                            "Rim cleaning & protect",
+                            "Windshield cleaning",
+                            "Seat cleaning"
                         ],
                         "cta": {
                             "label": "Bericht mij",
@@ -115,20 +122,21 @@
                     },
                     {
                         "id": "rate-6",
-                        "title": "Premium plan - Motor",
-                        "excerpt": "A premium plan for those seeking top-notch services for their motorcycle.",
-                        "price": "€300,-",
+                        "title": "Supreme Care Plan",
+                        "category": "motor",
+                        "excerpt": "Een premium plan voor degenen die topdiensten voor hun motor zoeken.",
+                        "price": "€85,-",
                         "description": "",
                         "color": "coral",
                         "features": [
                             "Exterior wash",
-                            "Chain lubrication",
+                            "Spray coating",
+                            "Rim cleaning & protect",
+                            "Windshield cleaning",
                             "Seat cleaning",
-                            "Polishing",
-                            "Rim cleaning",
-                            "Engine cleaning",
-                            "Waxing",
-                            "Leather conditioning"
+                            "Detailing (incl. chrome/aluminum parts)",
+                            "Polishing (incl. clay treatment)",
+                            "Chain cleaning & greasing"
                         ],
                         "cta": {
                             "label": "Bericht mij",

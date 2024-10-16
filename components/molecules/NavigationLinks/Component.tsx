@@ -40,7 +40,7 @@ export default function NavigationLinks(
       <li>
         <Button
           as="link"
-          href="https://wa.me/31637403736"
+          href={siteMenusActionButton.href}
           size="small"
           className={scrollTop ? 'hover:text-white' : 'hover:text-secondary'}
           target="_blank"
