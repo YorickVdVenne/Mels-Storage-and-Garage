@@ -177,7 +177,12 @@ export default function TabList(props: TabListProps): JSX.Element {
                   </RateCardContent>
                   {item.cta && (
                     <RateCardFooter>
-                      <Button as="button" size="medium" variant="secondary">
+                      <Button
+                        as="link"
+                        href={item.cta.href}
+                        size="medium"
+                        variant="secondary"
+                      >
                         {item.cta.label}
                       </Button>
                     </RateCardFooter>
