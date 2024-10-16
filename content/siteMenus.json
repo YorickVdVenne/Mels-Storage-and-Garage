@@ -9,8 +9,8 @@
                 },
                 {
                     "id": "about-me",
-                    "label": "About me",
-                    "href": "/#about-me"
+                    "label": "Over mij",
+                    "href": "/#over-mij"
                 },
                 {
                     "id": "contact",
@@ -20,7 +20,7 @@
             ],
             "actionButton": {
                 "label": "Bericht mij",
-                "href": "/#contact"
+                "href": "https://wa.me/31637403736"
             }
         },
         "footer": {}

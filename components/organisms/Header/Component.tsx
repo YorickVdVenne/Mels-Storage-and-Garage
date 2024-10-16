@@ -15,7 +15,7 @@ export default function Header(): JSX.Element {
           height={1000}
         />
         <div className="relative w-full min-h-[90vh] max-h-[100rem] items-center grid grid-cols-10 gap-4">
-          <div className="flex flex-col gap-4 col-start-2 col-end-10 md:col-start-2 md:col-end-6 rounded-xl">
+          <div className="flex flex-col gap-4 col-start-2 col-end-10 md:col-end-8 lg:col-end-6 rounded-xl">
             <h1 className="font-grotesk-grand text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
               {header.data.title}
             </h1>

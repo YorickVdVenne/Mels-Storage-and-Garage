@@ -10,10 +10,14 @@ import { Panel } from '@/types/rates';
 import React, { useState, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCheck,
+  faCar,
+  faMotorcycle,
+} from '@fortawesome/free-solid-svg-icons';
 import { Button } from '@/components/atoms/Button/Component';
 
-library.add(faCheck);
+library.add(faCheck, faCar, faMotorcycle);
 
 interface TabListProps {
   tabs: BaseObject[];
@@ -139,14 +143,29 @@ export default function TabList(props: TabListProps): JSX.Element {
                       {item.title}
                     </h3>
 
+                    <div className="absolute right-0 top-0 -translate-x-2 translate-y-2">
+                      {item.category === 'auto' ? (
+                        <FontAwesomeIcon
+                          icon={faCar}
+                          className="h-6 w-6 text-white"
+                        />
+                      ) : (
+                        <FontAwesomeIcon
+                          icon={faMotorcycle}
+                          className="h-6 w-6 text-white"
+                        />
+                      )}
+                    </div>
+
                     <p className="text-4xl font-grotesk">{item.price}</p>
+
                     <p>{item.excerpt}</p>
                   </RateCardHeader>
                   <RateCardContent>
                     {isClient &&
                       item.features.map((feature, index) => (
                         <div key={index} className="flex items-center gap-3">
-                          <span className="bg-charcoal-black rounded-full h-6 w-6 flex justify-center items-center">
+                          <span className="bg-charcoal-black rounded-full h-6 w-6 min-w-6 flex justify-center items-center">
                             <FontAwesomeIcon
                               icon={faCheck}
                               className="h-4 w-4 text-white"
