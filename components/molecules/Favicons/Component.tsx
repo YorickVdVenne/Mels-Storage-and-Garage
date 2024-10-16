@@ -27,7 +27,6 @@ export default function Favicons(): JSX.Element {
         sizes="48x48"
       />
       <link rel="shortcut icon" href="/default/favicon.ico" />
-      <link rel="icon" type="image/svg+xml" href="/default/favicon.svg" />
       <meta name="msapplication-TileColor" content="#082866" />
       <meta name="msapplication-config" content="/default/browserconfig.xml" />
       <meta name="theme-color" content="#082866" />
